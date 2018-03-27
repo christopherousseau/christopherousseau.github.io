@@ -51,21 +51,21 @@ Dont forget to change the permissions to allow other users than the owner to use
 ```
 #cat /etc/apt/sources.list
 
-deb http://10.255.248.37/export/nim/lpp_source/powervc/novalink/1.0.0.9/mnt/ xenial main restricted universe
+deb http://<NFSSERVER>/export/nim/lpp_source/powervc/novalink/1.0.0.9/mnt/ xenial main restricted universe
 ```
 ##### change the pvm novalink source
 ```
 cat /etc/apt/sources.list.d/pvm.list
-deb http://10.255.248.37/export/nim/lpp_source/powervc/novalink/1.0.0.9/pvmrepo novalink_1.0.0 non-free optional
+deb http://<NFSSERVER>/export/nim/lpp_source/powervc/novalink/1.0.0.9/pvmrepo novalink_1.0.0 non-free optional
 ```
 
 ## update repo and apt upgrade novalink packages
 
 ``` 
 # apt update
-Ign:1 http://10.255.248.37/export/nim/lpp_source/powervc/novalink/1.0.0.9/mnt xenial InRelease
-Hit:2 http://10.255.248.37/export/nim/lpp_source/powervc/novalink/1.0.0.9/pvmrepo novalink_1.0.0 InRelease
-Hit:3 http://10.255.248.37/export/nim/lpp_source/powervc/novalink/1.0.0.9/mnt xenial Release
+Ign:1 http://<NFSSERVER>/export/nim/lpp_source/powervc/novalink/1.0.0.9/mnt xenial InRelease
+Hit:2 http://<NFSSERVER>/export/nim/lpp_source/powervc/novalink/1.0.0.9/pvmrepo novalink_1.0.0 InRelease
+Hit:3 http://<NFSSERVER>/export/nim/lpp_source/powervc/novalink/1.0.0.9/mnt xenial Release
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
